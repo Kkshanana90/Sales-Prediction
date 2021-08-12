@@ -39,22 +39,22 @@ m_12                 Dummy for December (other dummies are dropped)
 Sales_avg_store       Average Sales for each store. This variable is merged into the Store.csv and then saved as a new feature of the stores for predictions
 
 ### engineered variables (more complex)<br/>
-DayOfWeek_recode       just changed the sequence so that Sunday is the new 1, this can reflect the actual linear relationship between performance throughout week
+DayOfWeek_recode       just changed the sequence so that Sunday is the new 1, this can reflect the actual linear relationship between performance throughout                       week
 logDistance           logarithmic competition distance (in order to devaluatte extreme high numbers)
 City_center            low competition distance (<500) and long time competition (>10 years) indicates that the shop is placed in a crucial spot
 
 
-date_delta             0 for first day of dataset, then counts up each day until the end of dataset. Visual checking showed some stores had upwards trending data Sales (while i found no downward trends.)<br/>
+date_delta             0 for first day of dataset, then counts up each day until the end of dataset. Visual checking showed some stores had upwards trending                        data Sales (while i found no downward trends.)<br/>
 monthstart            Dummy that is one for the first couple of days of a month. Visual checking indicated higher sales.
-firstdaysweek13         Dummy identifies first and third week of month. Visual checking indicated that the first and thrid week of any month have higher average sales.
-Fortnight_Days         first day of each month is 1 and counts up to 14, then starts again at 1.
+firstdaysweek13       Dummy identifies first and third week of month. Visual checking indicated that the first and thrid week of any month have higher                            average sales.
+Fortnight_Days        first day of each month is 1 and counts up to 14, then starts again at 1.
 
 
 prstart               Dummy that is 1 after the Promo2 campaigns startet
-pr_campaign             Dummy that is 1 if a campaign is running. a campaign is running if the month is mentioned in "PromoInterval" and the date is
+pr_campaign           Dummy that is 1 if a campaign is running. a campaign is running if the month is mentioned in "PromoInterval" and the date is
                         after the overall start of the campaign indicated in the variables 'Promo2SinceWeek' and 'Promo2SinceYear'
                        
-Reopening               Dummy that is 1 on a day the shop was open , and that was precedet by at least 5 days of the shop being closed
+Reopening             Dummy that is 1 on a day the shop was open , and that was precedet by at least 5 days of the shop being closed
 
 ## Model used
 
