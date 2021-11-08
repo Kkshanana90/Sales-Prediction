@@ -68,7 +68,7 @@ dt.loc[:, "Store"] = dt.loc[:, "Store"].astype(int)
 
 dt.Open.fillna(1, inplace=True)
 
-#Make a variable ReOPENING that 1 one if a shop opens after 5 days of absence
+#Make a variable ReOPENING that takes the value 1 if a shop opens after 5 days of absence
 dt['Open_5']  = dt.groupby('Store')['Open'].transform(lambda x: x.rolling(5,  min_periods=5).mean())
 dt['Open_last5'] = dt.groupby('Store')['Open_5'].shift(1)
 
