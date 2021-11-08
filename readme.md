@@ -44,7 +44,7 @@ logDistance           logarithmic competition distance (in order to devaluatte e
 City_center            low competition distance (<500) and long time competition (>10 years) indicates that the shop is placed in a crucial spot
 
 
-date_delta             0 for first day of dataset, then counts up each day until the end of dataset. Visual checking showed some stores had upwards trending                        data Sales (while i found no downward trends.)<br/>
+date_delta             0 for first day of dataset, then counts up each day until the end of dataset. Visual checking showed some stores had upwards trending                        data Sales (while we found no downward trends.)<br/>
 monthstart            Dummy that is one for the first couple of days of a month. Visual checking indicated higher sales.
 firstdaysweek13       Dummy identifies first and third week of month. Visual checking indicated that the first and thrid week of any month have higher                            average sales.
 Fortnight_Days        first day of each month is 1 and counts up to 14, then starts again at 1.
