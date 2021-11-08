@@ -19,7 +19,7 @@ SchoolHoliday
 Promo2
 
 
-### engineered variables (one-hot-encoding):<br/>
+### Engineered variables (one-hot-encoding):<br/>
 <br/>
 PublicHoliday          uses StateHoliday
 Easter                uses StateHoliday
@@ -35,10 +35,10 @@ dow_1 - dow_7          uses DayOfWeek
 m_12                 Dummy for December (other dummies are dropped)
 
 
-### engineered variables (mean-encoded)<br/>
+### Engineered variables (mean-encoded)<br/>
 Sales_avg_store       Average Sales for each store. This variable is merged into the Store.csv and then saved as a new feature of the stores for predictions
 
-### engineered variables (more complex)<br/>
+### Engineered variables (more complex)<br/>
 DayOfWeek_recode       just changed the sequence so that Sunday is the new 1, this can reflect the actual linear relationship between performance throughout                       week
 logDistance           logarithmic competition distance (in order to devaluatte extreme high numbers)
 City_center            low competition distance (<500) and long time competition (>10 years) indicates that the shop is placed in a crucial spot
