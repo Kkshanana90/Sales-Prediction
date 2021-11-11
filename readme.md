@@ -46,7 +46,7 @@ City_center:            low competition distance (<500) and long time competitio
 
 date_delta:            0 for first day of dataset, then counts up each day until the end of dataset. Visual checking showed some stores had upwards trending Sales data(while we found no downward trends.)<br/>
 monthstart:          Dummy that is one for the first couple of days of a month. Visual checking indicated higher sales.
-firstdaysweek13:       Dummy identifies first and third week of month. Visual checking indicated that the first and thrid week of any month have higher sales average sales. <br/>
+firstdaysweek13:       Dummy identifies first and third week of month. Visual checking indicated that the first and third week of any month have higher sales average sales. <br/>
 Fortnight_Days:        first day of each month is 1 and counts up to 14, then starts again at 1. <br/>
 
 
