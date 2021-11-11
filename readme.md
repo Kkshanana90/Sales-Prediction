@@ -39,14 +39,14 @@ m_12:                 Dummy for December (other dummies are dropped). <br/>
 Sales_avg_store:       Average Sales for each store. This variable is merged into the Store.csv and then saved as a new feature of the stores for predictions. <br/>
 
 ### Engineered variables (more complex)<br/>
-DayOfWeek_recode:       just changed the sequence so that Sunday is the new 1, this can reflect the actual linear relationship between performance throughout.    <br/>                   week
+DayOfWeek_recode:       just changed the sequence so that Sunday is the new 1, this can reflect the actual linear relationship between performance throughout weeks. <br/>
 logDistance:           logarithm of competition distance (in order to reduce the influence of extremely high numbers). <br/>
 City_center:            low competition distance (<500) and long time competition (>10 years) indicates that the shop is placed in a crucial spot. <br/>
 
 
-date_delta:            0 for first day of dataset, then counts up each day until the end of dataset. Visual checking showed some stores had upwards trend.  <br/>                     data Sales (while we found no downward trends.)<br/>
+date_delta:            0 for first day of dataset, then counts up each day until the end of dataset. Visual checking showed some stores had upwards trending Sales data(while we found no downward trends.)<br/>
 monthstart:          Dummy that is one for the first couple of days of a month. Visual checking indicated higher sales.
-firstdaysweek13:       Dummy identifies first and third week of month. Visual checking indicated that the first and thrid week of any month have higher sales.   <br/>                    average sales.
+firstdaysweek13:       Dummy identifies first and third week of month. Visual checking indicated that the first and thrid week of any month have higher sales average sales. <br/>
 Fortnight_Days:        first day of each month is 1 and counts up to 14, then starts again at 1. <br/>
 
 
